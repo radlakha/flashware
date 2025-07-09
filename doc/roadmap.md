@@ -10,7 +10,9 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ### 📌 Epic: BoK Management
 - **Story 1.1:** As a User, I can create a new BoK with title, optional description, and source URL.
+- **Story 1.1.a:** As a User, I see a styled, accessible form with loading state & feedback (ShadCN).
 - **Story 1.2:** As a User, I can see a list of my BoKs.
+- **Story 1.2.a:** As a User, the list is styled for clarity.
 
 ### 📌 Epic: Deck Management
 - **Story 1.3:** As a User, I can create a Deck under a BoK.
@@ -20,6 +22,10 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 ### 📌 Epic: Play Deck
 - **Story 1.6:** As a User, I can launch a Deck and play Cards.
 - **Story 1.7:** As a User, I can answer a Card and see if I was right.
+
+### 📌 Epic: UX Foundation (optional)
+- **Story 1.8:** As a User, I can navigate with a simple header/menu.
+- **Story 1.9:** As a User, I see consistent site-wide theme (light/dark)
 
 ---
 
