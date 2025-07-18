@@ -4,13 +4,13 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 1 — “MVP: Learn by Deck”
+## Iteration 1 — “MVP: Learn by Deck” [CURRENT ITERATION]
 
 **Goal:** Create a BoK → Add Deck → Play Deck
 
 ### 📌 Epic: BoK Management
-- **Story 1.1:** As a User, I can create a new BoK with title, optional description, and source URL.
-- **Story 1.1.a:** As a User, I see a styled, accessible form with loading state & feedback (ShadCN).
+- ✅ **Story 1.1:** As a User, I can create a new BoK with title, optional description, and source URL.
+- ✅ **Story 1.1.a:** As a User, I see a styled, accessible form with loading state & feedback (ShadCN).
 - **Story 1.2:** As a User, I can see a list of my BoKs.
 - **Story 1.2.a:** As a User, the list is styled for clarity.
 
@@ -29,7 +29,7 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 2 — “MVP+: Learn by BoK or Tag”
+## Iteration 2 — “MVP+: Learn by BoK or Tag”
 
 ### 📌 Epic: Play BoK
 - **Story 2.1:** As a User, I can start a session to play all Cards across Decks under a BoK.
@@ -40,7 +40,7 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 2a — “Smart Play Options”
+## Iteration 2a — “Smart Play Options”
 
 ### 📌 Epic: Session Options
 - **Story 2a.1:** As a User, I can choose how many Cards to play.
@@ -48,7 +48,7 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 3 — “Tracking & Feedback”
+## Iteration 3 — “Tracking & Feedback”
 
 ### 📌 Epic: Runs & Results
 - **Story 3.1:** As a User, every Play session creates a Run with time and results.
@@ -56,7 +56,7 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 4 — “Spaced Repetition Mode”
+## Iteration 4 — “Spaced Repetition Mode”
 
 ### 📌 Epic: Smart Review
 - **Story 4.1:** As a User, I can choose Spaced Repetition mode.
@@ -64,7 +64,7 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 5 — “Full CRUD”
+## Iteration 5 — “Full CRUD”
 
 ### 📌 Epic: Manage BoKs
 - **Story 5.1:** View, edit, delete BoK.
@@ -77,7 +77,7 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 6 — “Publishing & Sharing”
+## Iteration 6 — “Publishing & Sharing”
 
 ### 📌 Epic: Sharing
 - **Story 6.1:** As a User, I can generate a share link for a BoK.
@@ -85,8 +85,10 @@ A simple, clear breakdown of planned work — organized into Iterations, Epics, 
 
 ---
 
-## ✅ Iteration 7 — “Progress Sharing”
+## Iteration 7 — “Progress Sharing”
 
 ### 📌 Epic: My Progress
 - **Story 7.1:** As a User, I can see my progress and stats.
 - **Story 7.2:** As a User, I can share a summary with others.
+
+Update with progress.

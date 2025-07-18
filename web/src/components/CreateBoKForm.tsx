@@ -15,10 +15,37 @@ export default function CreateBoKForm() {
   const [description, setDescription] = useState("")
   const [sourceUrl, setSourceUrl] = useState("")
   const [loading, setLoading] = useState(false)
+  const [urlError, setUrlError] = useState("")
 //   const { toast } = useToast()
+
+  function validateUrl(url: string): boolean {
+    if (!url.trim()) return true // Empty is allowed
+    
+    try {
+      const urlObj = new URL(url)
+      return urlObj.protocol === 'http:' || urlObj.protocol === 'https:'
+    } catch {
+      return false
+    }
+  }
+
+  function handleUrlBlur() {
+    if (sourceUrl && !validateUrl(sourceUrl)) {
+      setUrlError("Please enter a valid URL starting with http:// or https://")
+    } else {
+      setUrlError("")
+    }
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    
+    // Validate URL before submission
+    if (sourceUrl && !validateUrl(sourceUrl)) {
+      setUrlError("Please enter a valid URL starting with http:// or https://")
+      return
+    }
+    
     setLoading(true)
 
     const res = await fetch("/api/bok", {
@@ -68,10 +95,15 @@ export default function CreateBoKForm() {
           id="sourceUrl"
           value={sourceUrl}
           onChange={(e) => setSourceUrl(e.target.value)}
+          onBlur={handleUrlBlur}
+          className={urlError ? "border-red-500" : ""}
         />
+        {urlError && (
+          <p className="text-sm text-red-500 mt-1">{urlError}</p>
+        )}
       </div>
 
-      <Button type="submit" disabled={loading}>
+      <Button type="submit" disabled={loading || !!urlError}>
         {loading ? "Saving..." : "Create BoK"}
       </Button>
     </form>

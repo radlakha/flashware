@@ -1,8 +1,22 @@
 # Flashware — Project Overview
 
-## 📚 Vision
+This is a Next.js app (using Pages Router) deployed on Vercel with Supabase as the backend data store (including auth and realtime). No separate backend server; all logic in TypeScript code.
 
 Flashware is a personal and shareable flashcard system that helps learners anchor study sessions to real knowledge sources (Bodies of Knowledge, or BoKs), break them into Decks of Cards, and track learning progress with Runs — all fully owned and controlled by the User.
+
+## Key Objectives
+- Provide Decks of Cards for users to practice. Decks of questions are created from Bodies of Knowledge (BoKs).
+- Allow users to create, share, and publish their own BoKs and Decks.
+- Enable users to run study sessions (Runs) that track progress and results.
+- Emphasize functional programming where possible (immutability, pure functions) per squad-canary-standards.
+- UI consistency via ShadCN components; fast deploys on Vercel.
+
+## Tech Stack
+- Frontend/Full-Stack: Next.js 14+ (Pages Router for routing and API routes).
+- Database: Supabase (PostgreSQL-based; connect via env URL in Vercel, e.g., POSTGRES_URL).
+- Deployment: Vercel (auto-deploys from Git; use env vars for Supabase keys).
+- Auth: use Google OAuth via Supabase Auth.
+- Testing: Cypress for e2e; Jest for units.
 
 ## 🎯 Core Entities
 
@@ -40,3 +54,5 @@ Flashware is a personal and shareable flashcard system that helps learners ancho
 ## 🗂️ Storage
 - PostgreSQL for structured storage.
 - Starts as a simple RDBMS; grows with features.
+
+Modify as project evolves.
